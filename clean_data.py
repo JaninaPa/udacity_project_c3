@@ -38,4 +38,7 @@ print(df.shape)
 for col in df.columns:
     print(df[col].unique())
 
+print(len(df[df.salary == '<=50K']))
+print(len(df[df.salary == '>50K']))
+
 df.to_csv("census_cleaned.csv")
