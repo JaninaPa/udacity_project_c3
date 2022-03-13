@@ -32,6 +32,7 @@ X_train, y_train, encoder, lb = process_data(
     label="salary", 
     training=True
 )
+
 x_test, y_test, encoder_test, lb_test = process_data(
     test,
     categorical_features=cat_features,
@@ -64,3 +65,17 @@ encoder_file = 'census_lr_enc.sav'
 
 pickle.dump(model, open(model_file, 'wb'))
 pickle.dump(model, open(encoder_file, 'wb'))
+
+# Save scores of slice testing
+
+with open("slice_testing_scores.txt","w") as f:
+    for feature in cat_features:
+        f.write(f"Column: {feature}\n")
+        scores = slice_testing(model,data,feature,cat_features,lb,encoder,"salary")
+        for dict in scores:
+            f.write(f"#### Value: {dict['Value']} ####\n")
+            f.write(f"Mean Accuracy: {dict['Mean Accuracy']} \n")
+            f.write(f"Precision    : {dict['Precision']} \n")
+            f.write(f"Recall       : {dict['Recall']} \n")
+            f.write(f"Fbeta        : {dict['Fbeta']} \n")
+            f.write("\n")
