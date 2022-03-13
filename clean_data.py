@@ -4,6 +4,7 @@ df = pd.read_csv("census.csv")
 
 # Info about dataframe
 print(df.head(10))
+print(df.shape)
 print(df.describe())
 print(df.isna().sum())
 
