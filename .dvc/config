@@ -1,4 +1,5 @@
 [core]
     remote = remote
+    autostage = true
 ['remote "remote"']
     url = s3://udacity.project-c3
