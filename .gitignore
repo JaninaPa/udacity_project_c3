@@ -135,3 +135,5 @@ awscliv2.zip
 /census.csv
 
 /census_cleaned.csv
+/census_lr_enc.sav
+/census_lr_model.sav
