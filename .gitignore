@@ -125,5 +125,12 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+# aws directories
+
+aws/
+awscliv2.zip
+
 # Pyre type checker
 .pyre/
+/census.csv
+
