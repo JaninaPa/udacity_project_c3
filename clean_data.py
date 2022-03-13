@@ -13,8 +13,13 @@ print(df.columns)
 df.columns = df.columns.str.strip()
 print(df.columns)
 
-# The slice testing showed, that some entries contain question marks.
-# Removal of '?'
+for col in df.columns:
+    print(df[col].unique())
+
+# The results of slice testing and display of column names showed, 
+# that some entries contain question marks and leading whitespaces.
+
+# Removal of '?' and leading whitespaces
 list_cat_cols = [
     "workclass",
     "education",
@@ -24,9 +29,13 @@ list_cat_cols = [
     "race",
     "sex",
     "native-country",
+    "salary"
 ]
 for col in list_cat_cols:
     df = df.drop(df[df[col].str.contains("?", regex=False)].index)
+    df[col] = df[col].str.strip()
 print(df.shape)
+for col in df.columns:
+    print(df[col].unique())
 
 df.to_csv("census_cleaned.csv")
