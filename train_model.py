@@ -63,7 +63,7 @@ model_file = 'census_lr_model.sav'
 encoder_file = 'census_lr_enc.sav'
 
 pickle.dump(model, open(model_file, 'wb'))
-pickle.dump(model, open(encoder_file, 'wb'))
+pickle.dump(encoder, open(encoder_file, 'wb'))
 
 # Save scores of slice testing
 
