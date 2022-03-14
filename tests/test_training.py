@@ -79,8 +79,8 @@ def test_process_data(data):
         training=False,
     )
 
-    cat_cols_train = [cat_features[idx] for idx in range(len(cat_features)) if X_train[idx].values.dtype.name == 'category']
-    cat_cols_test =  [cat_features[idx] for idx in range(len(cat_features)) if x_test[idx].values.dtype.name == 'category']
+    cat_cols_train = [cat_features[idx] for idx in range(len(cat_features)) if X_train[idx].dtype.name == 'category']
+    cat_cols_test =  [cat_features[idx] for idx in range(len(cat_features)) if x_test[idx].dtype.name == 'category']
     cat_cols = cat_cols_train+cat_cols_test
 
     assert len(cat_cols) == 0
