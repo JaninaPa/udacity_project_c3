@@ -1,0 +1,596 @@
+Column: workclass
+#### Value: State-gov ####
+Mean Accuracy: 0.9577795152462861 
+Precision    : 0.9215116279069767 
+Recall       : 0.9215116279069767 
+Fbeta        : 0.9215116279069767 
+
+#### Value: Self-emp-not-inc ####
+Mean Accuracy: 0.9479791916766707 
+Precision    : 0.8978201634877384 
+Recall       : 0.9229691876750701 
+Fbeta        : 0.910220994475138 
+
+#### Value: Private ####
+Mean Accuracy: 0.9667055550569864 
+Precision    : 0.9230454359394188 
+Recall       : 0.9249384741591469 
+Fbeta        : 0.9239909854538005 
+
+#### Value: Federal-gov ####
+Mean Accuracy: 0.9522799575821845 
+Precision    : 0.9371584699453552 
+Recall       : 0.9397260273972603 
+Fbeta        : 0.9384404924760602 
+
+#### Value: Local-gov ####
+Mean Accuracy: 0.9579100145137881 
+Precision    : 0.9209677419354839 
+Recall       : 0.9376026272577996 
+Fbeta        : 0.9292107404393816 
+
+#### Value: Self-emp-inc ####
+Mean Accuracy: 0.9329608938547486 
+Precision    : 0.9551724137931035 
+Recall       : 0.9233333333333333 
+Fbeta        : 0.9389830508474576 
+
+#### Value: Without-pay ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+Column: education
+#### Value: Bachelors ####
+Mean Accuracy: 0.9526169706582077 
+Precision    : 0.9456778460085026 
+Recall       : 0.9416745061147695 
+Fbeta        : 0.9436719302380391 
+
+#### Value: HS-grad ####
+Mean Accuracy: 0.9639227642276422 
+Precision    : 0.8778443113772455 
+Recall       : 0.9066171923314781 
+Fbeta        : 0.8919987830848799 
+
+#### Value: 11th ####
+Mean Accuracy: 0.9895038167938931 
+Precision    : 0.9285714285714286 
+Recall       : 0.8813559322033898 
+Fbeta        : 0.9043478260869564 
+
+#### Value: Masters ####
+Mean Accuracy: 0.9477566072526121 
+Precision    : 0.9541984732824428 
+Recall       : 0.9531590413943355 
+Fbeta        : 0.9536784741144414 
+
+#### Value: 9th ####
+Mean Accuracy: 0.9758241758241758 
+Precision    : 0.85 
+Recall       : 0.68 
+Fbeta        : 0.7555555555555556 
+
+#### Value: Some-college ####
+Mean Accuracy: 0.9651093141659179 
+Precision    : 0.9131086142322098 
+Recall       : 0.9124251497005988 
+Fbeta        : 0.91276675402471 
+
+#### Value: Assoc-acdm ####
+Mean Accuracy: 0.9662698412698413 
+Precision    : 0.9404761904761905 
+Recall       : 0.92578125 
+Fbeta        : 0.9330708661417323 
+
+#### Value: 7th-8th ####
+Mean Accuracy: 0.9784560143626571 
+Precision    : 0.8108108108108109 
+Recall       : 0.8571428571428571 
+Fbeta        : 0.8333333333333334 
+
+#### Value: Doctorate ####
+Mean Accuracy: 0.952 
+Precision    : 0.9746376811594203 
+Recall       : 0.9607142857142857 
+Fbeta        : 0.9676258992805756 
+
+#### Value: Assoc-voc ####
+Mean Accuracy: 0.9510328997704667 
+Precision    : 0.9166666666666666 
+Recall       : 0.8953488372093024 
+Fbeta        : 0.9058823529411765 
+
+#### Value: Prof-school ####
+Mean Accuracy: 0.9446494464944649 
+Precision    : 0.9676616915422885 
+Recall       : 0.958128078817734 
+Fbeta        : 0.962871287128713 
+
+#### Value: 5th-6th ####
+Mean Accuracy: 0.9826388888888888 
+Precision    : 0.7333333333333333 
+Recall       : 0.9166666666666666 
+Fbeta        : 0.8148148148148148 
+
+#### Value: 10th ####
+Mean Accuracy: 0.9780487804878049 
+Precision    : 0.8727272727272727 
+Recall       : 0.8135593220338984 
+Fbeta        : 0.8421052631578948 
+
+#### Value: Preschool ####
+Mean Accuracy: 0.9555555555555556 
+Precision    : 0.0 
+Recall       : 1.0 
+Fbeta        : 0.0 
+
+#### Value: 12th ####
+Mean Accuracy: 0.9734748010610079 
+Precision    : 0.7714285714285715 
+Recall       : 0.9310344827586207 
+Fbeta        : 0.8437500000000001 
+
+#### Value: 1st-4th ####
+Mean Accuracy: 0.9801324503311258 
+Precision    : 0.8 
+Recall       : 0.6666666666666666 
+Fbeta        : 0.7272727272727272 
+
+Column: marital-status
+#### Value: Never-married ####
+Mean Accuracy: 0.9883816574131195 
+Precision    : 0.8742138364779874 
+Recall       : 0.8872340425531915 
+Fbeta        : 0.880675818373812 
+
+#### Value: Married-civ-spouse ####
+Mean Accuracy: 0.93771773906861 
+Precision    : 0.9304754481683554 
+Recall       : 0.9328020003125488 
+Fbeta        : 0.9316372717340409 
+
+#### Value: Divorced ####
+Mean Accuracy: 0.9769814902705268 
+Precision    : 0.893569844789357 
+Recall       : 0.8915929203539823 
+Fbeta        : 0.8925802879291251 
+
+#### Value: Married-spouse-absent ####
+Mean Accuracy: 0.9837837837837838 
+Precision    : 0.9310344827586207 
+Recall       : 0.8709677419354839 
+Fbeta        : 0.9 
+
+#### Value: Separated ####
+Mean Accuracy: 0.9818956336528222 
+Precision    : 0.8769230769230769 
+Recall       : 0.8636363636363636 
+Fbeta        : 0.8702290076335878 
+
+#### Value: Married-AF-spouse ####
+Mean Accuracy: 0.9047619047619048 
+Precision    : 1.0 
+Recall       : 0.8 
+Fbeta        : 0.888888888888889 
+
+#### Value: Widowed ####
+Mean Accuracy: 0.9770253929866989 
+Precision    : 0.8588235294117647 
+Recall       : 0.9125 
+Fbeta        : 0.8848484848484848 
+
+Column: occupation
+#### Value: Adm-clerical ####
+Mean Accuracy: 0.9787691480784735 
+Precision    : 0.9232323232323232 
+Recall       : 0.9176706827309237 
+Fbeta        : 0.920443101711984 
+
+#### Value: Exec-managerial ####
+Mean Accuracy: 0.9526553106212425 
+Precision    : 0.9523809523809523 
+Recall       : 0.9499225606608157 
+Fbeta        : 0.9511501680020676 
+
+#### Value: Handlers-cleaners ####
+Mean Accuracy: 0.9851851851851852 
+Precision    : 0.8987341772151899 
+Recall       : 0.8554216867469879 
+Fbeta        : 0.8765432098765433 
+
+#### Value: Prof-specialty ####
+Mean Accuracy: 0.950222882615156 
+Precision    : 0.946725860155383 
+Recall       : 0.9420209828823854 
+Fbeta        : 0.9443675615831719 
+
+#### Value: Other-service ####
+Mean Accuracy: 0.9872353673723536 
+Precision    : 0.8321167883211679 
+Recall       : 0.8636363636363636 
+Fbeta        : 0.8475836431226766 
+
+#### Value: Sales ####
+Mean Accuracy: 0.9481026785714286 
+Precision    : 0.9024640657084189 
+Recall       : 0.9061855670103093 
+Fbeta        : 0.904320987654321 
+
+#### Value: Transport-moving ####
+Mean Accuracy: 0.9580152671755725 
+Precision    : 0.891640866873065 
+Recall       : 0.9028213166144201 
+Fbeta        : 0.8971962616822431 
+
+#### Value: Farming-fishing ####
+Mean Accuracy: 0.9646107178968655 
+Precision    : 0.8174603174603174 
+Recall       : 0.8956521739130435 
+Fbeta        : 0.8547717842323652 
+
+#### Value: Machine-op-inspct ####
+Mean Accuracy: 0.9684638860630722 
+Precision    : 0.8616600790513834 
+Recall       : 0.889795918367347 
+Fbeta        : 0.8755020080321286 
+
+#### Value: Tech-support ####
+Mean Accuracy: 0.9671052631578947 
+Precision    : 0.9492753623188406 
+Recall       : 0.9424460431654677 
+Fbeta        : 0.9458483754512634 
+
+#### Value: Craft-repair ####
+Mean Accuracy: 0.9543424317617866 
+Precision    : 0.8917748917748918 
+Recall       : 0.9074889867841409 
+Fbeta        : 0.8995633187772926 
+
+#### Value: Protective-serv ####
+Mean Accuracy: 0.9425465838509317 
+Precision    : 0.9178743961352657 
+Recall       : 0.9047619047619048 
+Fbeta        : 0.9112709832134293 
+
+#### Value: Armed-Forces ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Priv-house-serv ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+Column: relationship
+#### Value: Not-in-family ####
+Mean Accuracy: 0.9751488480455605 
+Precision    : 0.8778443113772455 
+Recall       : 0.8906439854191981 
+Fbeta        : 0.8841978287092884 
+
+#### Value: Husband ####
+Mean Accuracy: 0.9374949851560619 
+Precision    : 0.9299754299754299 
+Recall       : 0.933086811058285 
+Fbeta        : 0.9315285224575899 
+
+#### Value: Wife ####
+Mean Accuracy: 0.9366998577524893 
+Precision    : 0.9416058394160584 
+Recall       : 0.9293948126801153 
+Fbeta        : 0.9354604786076868 
+
+#### Value: Own-child ####
+Mean Accuracy: 0.996641289744738 
+Precision    : 0.9016393442622951 
+Recall       : 0.859375 
+Fbeta        : 0.88 
+
+#### Value: Unmarried ####
+Mean Accuracy: 0.987546699875467 
+Precision    : 0.9178743961352657 
+Recall       : 0.892018779342723 
+Fbeta        : 0.9047619047619047 
+
+#### Value: Other-relative ####
+Mean Accuracy: 0.983127109111361 
+Precision    : 0.7272727272727273 
+Recall       : 0.9142857142857143 
+Fbeta        : 0.810126582278481 
+
+Column: race
+#### Value: White ####
+Mean Accuracy: 0.960822118536228 
+Precision    : 0.9244787869951888 
+Recall       : 0.927182336598918 
+Fbeta        : 0.9258285881150532 
+
+#### Value: Black ####
+Mean Accuracy: 0.9762158324458644 
+Precision    : 0.8986666666666666 
+Recall       : 0.9207650273224044 
+Fbeta        : 0.9095816464237517 
+
+#### Value: Asian-Pac-Islander ####
+Mean Accuracy: 0.9597765363128492 
+Precision    : 0.9416666666666667 
+Recall       : 0.9112903225806451 
+Fbeta        : 0.9262295081967212 
+
+#### Value: Amer-Indian-Eskimo ####
+Mean Accuracy: 0.9790209790209791 
+Precision    : 0.8888888888888888 
+Recall       : 0.9411764705882353 
+Fbeta        : 0.9142857142857143 
+
+#### Value: Other ####
+Mean Accuracy: 0.9783549783549783 
+Precision    : 0.9 
+Recall       : 0.8571428571428571 
+Fbeta        : 0.8780487804878048 
+
+Column: sex
+#### Value: Male ####
+Mean Accuracy: 0.9542198233562316 
+Precision    : 0.9259317012318727 
+Recall       : 0.9283927454659162 
+Fbeta        : 0.9271605902100086 
+
+#### Value: Female ####
+Mean Accuracy: 0.9798609691269679 
+Precision    : 0.909579230080573 
+Recall       : 0.9136690647482014 
+Fbeta        : 0.9116195603409601 
+
+Column: native-country
+#### Value: United-States ####
+Mean Accuracy: 0.962369109947644 
+Precision    : 0.9248645566010836 
+Recall       : 0.9273766976411723 
+Fbeta        : 0.9261189235491469 
+
+#### Value: Cuba ####
+Mean Accuracy: 0.967391304347826 
+Precision    : 0.9230769230769231 
+Recall       : 0.96 
+Fbeta        : 0.9411764705882353 
+
+#### Value: Jamaica ####
+Mean Accuracy: 0.975 
+Precision    : 0.9 
+Recall       : 0.9 
+Fbeta        : 0.9 
+
+#### Value: India ####
+Mean Accuracy: 0.96 
+Precision    : 0.9285714285714286 
+Recall       : 0.975 
+Fbeta        : 0.951219512195122 
+
+#### Value: Mexico ####
+Mean Accuracy: 0.980327868852459 
+Precision    : 0.7837837837837838 
+Recall       : 0.8787878787878788 
+Fbeta        : 0.8285714285714285 
+
+#### Value: Puerto-Rico ####
+Mean Accuracy: 0.9724770642201835 
+Precision    : 0.8461538461538461 
+Recall       : 0.9166666666666666 
+Fbeta        : 0.8799999999999999 
+
+#### Value: Honduras ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: England ####
+Mean Accuracy: 0.9418604651162791 
+Precision    : 0.9032258064516129 
+Recall       : 0.9333333333333333 
+Fbeta        : 0.9180327868852459 
+
+#### Value: Canada ####
+Mean Accuracy: 0.9626168224299065 
+Precision    : 1.0 
+Recall       : 0.8888888888888888 
+Fbeta        : 0.9411764705882353 
+
+#### Value: Germany ####
+Mean Accuracy: 0.9453125 
+Precision    : 0.9512195121951219 
+Recall       : 0.8863636363636364 
+Fbeta        : 0.9176470588235294 
+
+#### Value: Iran ####
+Mean Accuracy: 0.9285714285714286 
+Precision    : 0.8571428571428571 
+Recall       : 1.0 
+Fbeta        : 0.923076923076923 
+
+#### Value: Philippines ####
+Mean Accuracy: 0.9521276595744681 
+Precision    : 0.9636363636363636 
+Recall       : 0.8833333333333333 
+Fbeta        : 0.9217391304347826 
+
+#### Value: Poland ####
+Mean Accuracy: 0.9464285714285714 
+Precision    : 1.0 
+Recall       : 0.7272727272727273 
+Fbeta        : 0.8421052631578948 
+
+#### Value: Columbia ####
+Mean Accuracy: 0.9107142857142857 
+Precision    : 0.2 
+Recall       : 0.5 
+Fbeta        : 0.28571428571428575 
+
+#### Value: Cambodia ####
+Mean Accuracy: 0.9444444444444444 
+Precision    : 1.0 
+Recall       : 0.8571428571428571 
+Fbeta        : 0.923076923076923 
+
+#### Value: Thailand ####
+Mean Accuracy: 0.9411764705882353 
+Precision    : 1.0 
+Recall       : 0.6666666666666666 
+Fbeta        : 0.8 
+
+#### Value: Ecuador ####
+Mean Accuracy: 0.9629629629629629 
+Precision    : 0.8 
+Recall       : 1.0 
+Fbeta        : 0.888888888888889 
+
+#### Value: Laos ####
+Mean Accuracy: 0.9411764705882353 
+Precision    : 1.0 
+Recall       : 0.5 
+Fbeta        : 0.6666666666666666 
+
+#### Value: Taiwan ####
+Mean Accuracy: 0.9761904761904762 
+Precision    : 1.0 
+Recall       : 0.9473684210526315 
+Fbeta        : 0.972972972972973 
+
+#### Value: Haiti ####
+Mean Accuracy: 0.9523809523809523 
+Precision    : 0.75 
+Recall       : 0.75 
+Fbeta        : 0.75 
+
+#### Value: Portugal ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Dominican-Republic ####
+Mean Accuracy: 0.9701492537313433 
+Precision    : 0.5 
+Recall       : 1.0 
+Fbeta        : 0.6666666666666666 
+
+#### Value: El-Salvador ####
+Mean Accuracy: 0.98 
+Precision    : 0.8888888888888888 
+Recall       : 0.8888888888888888 
+Fbeta        : 0.8888888888888888 
+
+#### Value: France ####
+Mean Accuracy: 0.8518518518518519 
+Precision    : 0.75 
+Recall       : 1.0 
+Fbeta        : 0.8571428571428571 
+
+#### Value: Guatemala ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Italy ####
+Mean Accuracy: 0.9705882352941176 
+Precision    : 0.9583333333333334 
+Recall       : 0.9583333333333334 
+Fbeta        : 0.9583333333333334 
+
+#### Value: China ####
+Mean Accuracy: 0.9705882352941176 
+Precision    : 0.95 
+Recall       : 0.95 
+Fbeta        : 0.9500000000000001 
+
+#### Value: South ####
+Mean Accuracy: 0.9577464788732394 
+Precision    : 0.9230769230769231 
+Recall       : 0.8571428571428571 
+Fbeta        : 0.888888888888889 
+
+#### Value: Japan ####
+Mean Accuracy: 0.9661016949152542 
+Precision    : 0.9565217391304348 
+Recall       : 0.9565217391304348 
+Fbeta        : 0.9565217391304348 
+
+#### Value: Yugoslavia ####
+Mean Accuracy: 0.875 
+Precision    : 0.8333333333333334 
+Recall       : 0.8333333333333334 
+Fbeta        : 0.8333333333333334 
+
+#### Value: Peru ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Outlying-US(Guam-USVI-etc) ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Scotland ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Trinadad&Tobago ####
+Mean Accuracy: 0.9444444444444444 
+Precision    : 0.6666666666666666 
+Recall       : 1.0 
+Fbeta        : 0.8 
+
+#### Value: Greece ####
+Mean Accuracy: 0.9655172413793104 
+Precision    : 0.8888888888888888 
+Recall       : 1.0 
+Fbeta        : 0.9411764705882353 
+
+#### Value: Nicaragua ####
+Mean Accuracy: 0.9696969696969697 
+Precision    : 0.6666666666666666 
+Recall       : 1.0 
+Fbeta        : 0.8 
+
+#### Value: Vietnam ####
+Mean Accuracy: 0.9375 
+Precision    : 0.6 
+Recall       : 0.6 
+Fbeta        : 0.6 
+
+#### Value: Hong ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Ireland ####
+Mean Accuracy: 0.9166666666666666 
+Precision    : 1.0 
+Recall       : 0.6 
+Fbeta        : 0.7499999999999999 
+
+#### Value: Hungary ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
+#### Value: Holand-Netherlands ####
+Mean Accuracy: 1.0 
+Precision    : 1.0 
+Recall       : 1.0 
+Fbeta        : 1.0 
+
