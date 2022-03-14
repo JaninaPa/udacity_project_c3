@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 from fastapi.testclient import TestClient
 from main import app
 

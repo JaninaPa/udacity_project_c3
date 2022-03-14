@@ -17,8 +17,7 @@ post_data = {
     "hours-per-week": ["35"],
     "native-country": ["United-States"],
 }
-response = requests.post('https://udacity-project-c3.herokuapp.com/model_inference/',
-                            data=json.dumps(post_data))
+response = requests.post('https://udacity-project-c3.herokuapp.com/model_inference/', data=json.dumps(post_data))
 if response.status_code == 200:
     print("Request successful. Status Code: 200")
     print("Response body:")
