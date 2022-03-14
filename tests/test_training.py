@@ -76,7 +76,7 @@ def test_process_data(data):
     cat_cols = [cat_features[idx] for idx in range(len(cat_features)-1) if X_train[idx].dtype.name == 'category']
 
     assert len(cat_cols) == 0
-    assert np.unique(y_train) == [0,1]
+    assert np.unique(y_train).tolist() == [0,1]
 
 def test_train_model(data):
     # Split data in train and test set
@@ -99,15 +99,6 @@ def test_train_model(data):
         categorical_features=cat_features, 
         label="salary", 
         training=True
-    )
-
-    x_test, y_test, encoder_test, lb_test = process_data(
-        test,
-        categorical_features=cat_features,
-        encoder=encoder,
-        lb=lb,
-        label="salary",
-        training=False,
     )
 
     # Fit classifier
