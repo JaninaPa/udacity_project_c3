@@ -69,7 +69,7 @@ pickle.dump(encoder, open(encoder_file, 'wb'))
 
 # Save scores of slice testing
 
-with open("slice_testing_scores.txt","w") as f:
+with open("slice_output.txt","w") as f:
     for feature in cat_features:
         f.write(f"Column: {feature}\n")
         scores = slice_testing(model,data,feature,cat_features,lb,encoder,"salary")
