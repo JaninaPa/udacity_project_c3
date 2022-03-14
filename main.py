@@ -69,11 +69,11 @@ async def predict(request_body: RequestBody):
     X_categorical = df[cat_features].values
     X_continuous = df.drop(*[cat_features], axis=1)
 
-    encoder = pickle.load(open("census_enc_fastapi.sav", "rb"))
+    encoder = pickle.load(open("rf_enc_fastapi.sav", "rb"))
     X_categorical = encoder.transform(X_categorical)
     X = np.concatenate([X_continuous, X_categorical], axis=1)
 
-    classifier = pickle.load(open("census_model_fastapi.sav", "rb"))
+    classifier = pickle.load(open("rf_model_fastapi.sav", "rb"))
     
     predictions = inference(classifier, X)
 
