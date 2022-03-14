@@ -55,9 +55,12 @@ class RequestBody(BaseModel):
 app = FastAPI()
 
 # Define a GET on the specified endpoint.
+
+
 @app.get("/")
 async def say_hello():
     return {"greeting": "Welcome!"}
+
 
 @app.post("/model_inference/")
 async def predict(request_body: RequestBody):
@@ -73,7 +76,7 @@ async def predict(request_body: RequestBody):
         "native-country",
     ]
     df = pd.DataFrame(request_body.dict())
-    df.columns = df.columns.str.replace("_","-")
+    df.columns = df.columns.str.replace("_", "-")
 
     X_categorical = df[cat_features].values
     X_continuous = df.drop(*[cat_features], axis=1)
@@ -83,8 +86,7 @@ async def predict(request_body: RequestBody):
     X = np.concatenate([X_continuous, X_categorical], axis=1)
 
     classifier = pickle.load(open("rf_model_fastapi.sav", "rb"))
-    
+
     predictions = inference(classifier, X)
 
     return {"results": predictions.tolist()}
-    

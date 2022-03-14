@@ -5,6 +5,7 @@ from main import app
 
 client = TestClient(app)
 
+
 def test_get_path():
     r = client.get("/")
     assert r.status_code == 200
@@ -51,8 +52,7 @@ def test_pred_is_0():
         "hours-per-week": [40],
         "native-country": ["United-States"],
     }
-    
+
     r = client.post("/model_inference/", json=body)
     assert r.status_code == 200
     assert r.json() == {"results": [0]}
-

@@ -2,6 +2,7 @@ from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.tree import DecisionTreeClassifier
 import numpy as np
 
+
 def train_model(X_train, y_train):
     """
     Trains a machine learning model and returns it.
@@ -18,7 +19,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     clf = DecisionTreeClassifier()
-    clf.fit(X_train,y_train)
+    clf.fit(X_train, y_train)
 
     return clf
 
@@ -61,7 +62,15 @@ def inference(model, X):
     """
     return model.predict(X)
 
-def slice_testing(model,data,column,categorical_columns,lb,encoder,label):
+
+def slice_testing(
+        model,
+        data,
+        column,
+        categorical_columns,
+        lb,
+        encoder,
+        label):
     """ Run performance tests on slices of data.
 
     Inputs
@@ -80,8 +89,8 @@ def slice_testing(model,data,column,categorical_columns,lb,encoder,label):
         One Hot Encoder.
     label: str
         Name of target column.
-    
-    
+
+
     Returns
     -------
     performances: list
@@ -92,7 +101,7 @@ def slice_testing(model,data,column,categorical_columns,lb,encoder,label):
     for value in data[column].unique():
         df_temp = data[data[column] == value]
         y = df_temp[label]
-        X = df_temp.drop([label],axis=1)
+        X = df_temp.drop([label], axis=1)
 
         # Add processing steps from process_data
 
@@ -102,17 +111,17 @@ def slice_testing(model,data,column,categorical_columns,lb,encoder,label):
         y = lb.transform(y.values).ravel()
         X = np.concatenate([X_continuous, X_categorical], axis=1)
 
-        predictions = inference(model,X)
+        predictions = inference(model, X)
 
         # Evaluate model
 
-        mean_acc = model.score(X,y)
+        mean_acc = model.score(X, y)
         precision, recall, fbeta = compute_model_metrics(y, predictions)
 
-        performances.append({"Value":value,
-                        "Mean Accuracy": mean_acc,
-                        "Precision": precision,
-                        "Recall": recall,
-                        "Fbeta":fbeta})
+        performances.append({"Value": value,
+                             "Mean Accuracy": mean_acc,
+                             "Precision": precision,
+                             "Recall": recall,
+                             "Fbeta": fbeta})
 
     return performances

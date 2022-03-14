@@ -16,7 +16,7 @@ print(df.columns)
 for col in df.columns:
     print(df[col].unique())
 
-# The results of slice testing and display of column names showed, 
+# The results of slice testing and display of column names showed,
 # that some entries contain question marks and leading whitespaces.
 
 # Removal of '?' and leading whitespaces
