@@ -4,7 +4,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 
 ## Model Details
 
-The used classifier is a Logistic Regression model from scikit-learn version 0.23.2. It uses the default hyperparameters and was trained by Janina Patzer.
+The used classifier is a Logistic Regression model from scikit-learn version 1.0.2. It uses the default hyperparameters and was trained by Janina Patzer.
 ## Intended Use
 
 The algorithm aims to classify the salary of a person as above or below 50,000 USD based on several features.
