@@ -1,3 +1,4 @@
+from cv2 import mean
 from sklearn.model_selection import train_test_split
 from ml.data import process_data
 from ml.model import compute_model_metrics, inference, train_model
@@ -294,7 +295,7 @@ def test_inference(data):
     mean_acc = model.score(x_test, y_test)
     precision, recall, fbeta = compute_model_metrics(y_test, predictions)
 
-    assert mean_acc != 0
+    assert isinstance(mean_acc, float)
     assert isinstance(precision, float)
     assert isinstance(recall, float)
     assert isinstance(fbeta, float)
