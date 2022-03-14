@@ -82,7 +82,7 @@ def test_train_model(data):
     # Split data in train and test set
 
     train, test = train_test_split(data, test_size=0.20)
-    print(train.head(10))
+    
     cat_features = [
         "workclass",
         "education",
@@ -136,7 +136,7 @@ def test_inference(data):
         encoder=encoder,
         lb=lb,
         label="salary",
-        training=False,
+        training=False
     )
     # Fit classifier
 
