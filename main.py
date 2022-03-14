@@ -13,6 +13,7 @@ if "DYNO" in os.environ and os.path.isdir(".dvc"):
         exit("dvc pull failed")
     os.system("rm -r .dvc .apt/usr/lib/dvc")
 
+
 class RequestBody(BaseModel):
     age: List[int]
     workclass: List[str]
@@ -32,22 +33,23 @@ class RequestBody(BaseModel):
     class Config:
         schema_extra = {
             "example": {
-                "age":[42], 
-                "workclass":["Private"],
-                "fnlgt": [159449], 
-                "education":["Bachelors"], 
-                "education-num":[13], 
-                "marital-status":["Married-civ-spouse"],  
-                "occupation":["Exec-managerial"],
-                "relationship":["Husband"], 
-                "race":["White"], 
-                "sex":["Male"], 
-                "capital-gain":[5178], 
-                "capital-loss":[0], 
-                "hours-per-week": [40],  
-                "native-country":["United-States"]
+                "age": [42],
+                "workclass": ["Private"],
+                "fnlgt": [159449],
+                "education": ["Bachelors"],
+                "education-num": [13],
+                "marital-status": ["Married-civ-spouse"],
+                "occupation": ["Exec-managerial"],
+                "relationship": ["Husband"],
+                "race": ["White"],
+                "sex": ["Male"],
+                "capital-gain": [5178],
+                "capital-loss": [0],
+                "hours-per-week": [40],
+                "native-country": ["United-States"]
             }
         }
+
 
 # Instantiate the app.
 app = FastAPI()
@@ -85,3 +87,4 @@ async def predict(request_body: RequestBody):
     predictions = inference(classifier, X)
 
     return {"results": predictions.tolist()}
+    

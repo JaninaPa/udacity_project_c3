@@ -4,7 +4,11 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import pickle
 from ml.data import process_data
-from ml.model import *
+from ml.model import (
+    train_model,
+    inference,
+    compute_model_metrics,
+    slice_testing)
 
 # Load in  data
 
@@ -26,9 +30,9 @@ cat_features = [
 ]
 # Process data
 X_train, y_train, encoder, lb = process_data(
-    train, 
-    categorical_features=cat_features, 
-    label="salary", 
+    train,
+    categorical_features=cat_features,
+    label="salary",
     training=True
 )
 
@@ -41,16 +45,14 @@ x_test, y_test, encoder_test, lb_test = process_data(
     training=False,
 )
 
-
-
 # Fit classifier
 
-model = train_model(X_train,y_train)
-predictions = inference(model,x_test)
+model = train_model(X_train, y_train)
+predictions = inference(model, x_test)
 
 # Evaluate model
 
-mean_acc = model.score(x_test,y_test)
+mean_acc = model.score(x_test, y_test)
 precision, recall, fbeta = compute_model_metrics(y_test, predictions)
 
 print("###### Performance ######")
@@ -69,10 +71,17 @@ pickle.dump(encoder, open(encoder_file, 'wb'))
 
 # Save scores of slice testing
 
-with open("slice_output.txt","w") as f:
+with open("slice_output.txt", "w") as f:
     for feature in cat_features:
         f.write(f"Column: {feature}\n")
-        scores = slice_testing(model,data,feature,cat_features,lb,encoder,"salary")
+        scores = slice_testing(
+            model,
+            data,
+            feature,
+            cat_features,
+            lb,
+            encoder,
+            "salary")
         for dict in scores:
             f.write(f"#### Value: {dict['Value']} ####\n")
             f.write(f"Mean Accuracy: {dict['Mean Accuracy']} \n")
