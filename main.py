@@ -36,7 +36,7 @@ class RequestBody(BaseModel):
                 "workclass":["Private"],
                 "fnlgt": [159449], 
                 "education":["Bachelors"], 
-                "education_num":[13], 
+                "education-num":[13], 
                 "marital-status":["Married-civ-spouse"],  
                 "occupation":["Exec-managerial"],
                 "relationship":["Husband"], 
