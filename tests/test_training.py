@@ -44,7 +44,7 @@ def data():
 
 def test_data_shape(data):
 
-    assert data.isna().sum() == 0
+    assert data.isna().sum().sum() == 0
 
 def test_process_data(data):
 
@@ -79,8 +79,8 @@ def test_process_data(data):
         training=False,
     )
 
-    cat_cols_train = [col for col in cat_features if X_train[col].values.dtype.name == 'category']
-    cat_cols_test =  [col for col in cat_features if x_test[col].values.dtype.name == 'category']
+    cat_cols_train = [cat_features[idx] for idx in range(len(cat_features)) if X_train[idx].values.dtype.name == 'category']
+    cat_cols_test =  [cat_features[idx] for idx in range(len(cat_features)) if x_test[idx].values.dtype.name == 'category']
     cat_cols = cat_cols_train+cat_cols_test
 
     assert len(cat_cols) == 0
