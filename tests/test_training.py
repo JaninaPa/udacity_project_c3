@@ -72,22 +72,10 @@ def test_process_data(data):
         training=True
     )
 
-    x_test, y_test, encoder_test, lb_test = process_data(
-        test,
-        categorical_features=cat_features,
-        encoder=encoder,
-        lb=lb,
-        label="salary",
-        training=False,
-    )
-
-    cat_cols_train = [cat_features[idx] for idx in range(len(cat_features)-1) if X_train[idx].dtype.name == 'category']
-    cat_cols_test =  [cat_features[idx] for idx in range(len(cat_features)-1) if x_test[idx].dtype.name == 'category']
-    cat_cols = cat_cols_train+cat_cols_test
+    cat_cols = [cat_features[idx] for idx in range(len(cat_features)-1) if X_train[idx].dtype.name == 'category']
 
     assert len(cat_cols) == 0
     assert y_train.unqiue() == [0,1]
-    assert y_test.unqiue() == [0,1]
 
 def test_train_model(data):
     # Split data in train and test set
