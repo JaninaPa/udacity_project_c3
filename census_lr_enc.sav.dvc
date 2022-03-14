@@ -1,5 +1,5 @@
 outs:
-- md5: f775001a9134da9906771c893a831340
-  size: 1783
+- md5: bf2ff107b5ddcf1632e3b1e2dae74416
+  size: 1804
   isexec: true
   path: census_lr_enc.sav
