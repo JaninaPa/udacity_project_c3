@@ -1,5 +1,5 @@
 outs:
-- md5: 0c6255ea92eab408f436f54f9bf8d742
-  size: 15636
+- md5: ee377b2231d250592d252a71d9193237
+  size: 14845
   isexec: true
   path: slice_testing_scores.txt
