@@ -5,3 +5,4 @@ fastapi
 pydantic
 requests
 uvicorn
+dvc
