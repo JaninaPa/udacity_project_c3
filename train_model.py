@@ -8,7 +8,7 @@ from ml.model import *
 
 # Load in  data
 
-data = pd.read_csv("census_cleaned.csv")
+data = pd.read_csv("census_cleaned.csv", index_col=0)
 
 # Split data in train and test set
 
@@ -40,6 +40,8 @@ x_test, y_test, encoder_test, lb_test = process_data(
     label="salary",
     training=False,
 )
+
+
 
 # Fit classifier
 
