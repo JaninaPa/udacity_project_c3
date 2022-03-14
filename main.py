@@ -3,7 +3,8 @@ from typing import List
 from pydantic import Field, BaseModel
 import pickle
 from ml.model import inference
-
+import pandas as pd
+import numpy as np
 
 class RequestBody(BaseModel):
     age: List[int]
