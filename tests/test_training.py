@@ -76,7 +76,7 @@ def test_process_data(data):
     cat_cols = [cat_features[idx] for idx in range(len(cat_features)-1) if X_train[idx].dtype.name == 'category']
 
     assert len(cat_cols) == 0
-    assert np.unqiue(y_train) == [0,1]
+    assert np.unique(y_train) == [0,1]
 
 def test_train_model(data):
     # Split data in train and test set
