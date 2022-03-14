@@ -20,6 +20,6 @@ The metric used for evaluation are:
 * Fbeta: 0.39
 
 ## Ethical Considerations
-From gained data insights there is a confirmed imbalance in the dataset (slice_tsting_scores.txt and clean_data.py).
+From gained data insights there is a confirmed imbalance in the dataset (slice_testing_scores.txt and clean_data.py).
 ## Caveats and Recommendations
 The algorithm should be either adjusted to fit the imbalance of the dataset (e.g. with class weights or different solvers) or another algorithm should be tried to overcome this problem. The performance is not yet sufficient.
