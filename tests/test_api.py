@@ -13,6 +13,28 @@ def test_get_path():
 
 def test_pred_is_1():
     body = {
+        "age": ["30"],
+        "workclass": ["State-gov"],
+        "fnlgt": ["141297"],
+        "education": ["Bachelors"],
+        "education-num": ["13"],
+        "marital-status": ["Married-civ-spouse"],
+        "occupation": ["Prof-specialty"],
+        "relationship": ["Husband"],
+        "race": ["Asian-Pac-Islander"],
+        "sex": ["Male"],
+        "capital-gain": ["0"],
+        "capital-loss": ["0"],
+        "hours-per-week": ["40"],
+        "native-country": ["India"],
+    }
+    r = client.post("/model_inference/", json=body)
+    assert r.status_code == 200
+    assert r.json() == {"results": [1]}
+
+
+def test_pred_is_0():
+    body = {
         "age": ["39"],
         "workclass": ["State-gov"],
         "fnlgt": ["77516"],
@@ -27,28 +49,6 @@ def test_pred_is_1():
         "capital-loss": ["0"],
         "hours-per-week": ["40"],
         "native-country": ["United-States"],
-    }
-    r = client.post("/model_inference/", json=body)
-    assert r.status_code == 200
-    assert r.json() == {"results": [1]}
-
-
-def test_pred_is_0():
-    body = {
-        "age": ["56"],
-        "workclass": ["Self-emp-not-inc"],
-        "fnlgt": ["335605"],
-        "education": ["HS-grad"],
-        "education-num": ["9"],
-        "marital-status": ["Married-civ-spouse"],
-        "occupation": ["Other-service"],
-        "relationship": ["Husband"],
-        "race": ["White"],
-        "sex": ["Male"],
-        "capital-gain": ["0"],
-        "capital-loss": ["1887"],
-        "hours-per-week": ["50"],
-        "native-country": ["Canada"],
     }
     
     r = client.post("/model_inference/", json=body)
