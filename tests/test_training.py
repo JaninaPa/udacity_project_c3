@@ -3,6 +3,7 @@ from ml.data import process_data
 from ml.model import compute_model_metrics, inference, train_model
 
 import pandas as pd
+import numpy as np
 import pytest
 
 @pytest.fixture(scope="session")
@@ -75,7 +76,7 @@ def test_process_data(data):
     cat_cols = [cat_features[idx] for idx in range(len(cat_features)-1) if X_train[idx].dtype.name == 'category']
 
     assert len(cat_cols) == 0
-    assert y_train.unqiue() == [0,1]
+    assert np.unqiue(y_train) == [0,1]
 
 def test_train_model(data):
     # Split data in train and test set
