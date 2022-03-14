@@ -33,7 +33,7 @@ def test_pred_is_1():
     assert r.json() == {"results": [1]}
 
 
-def pred_is_0():
+def test_pred_is_0():
     body = {
         "age": ["39"],
         "workclass": ["State-gov"],
