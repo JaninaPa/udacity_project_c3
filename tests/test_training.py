@@ -8,7 +8,7 @@ import pytest
 @pytest.fixture(scope="session")
 def data():
 
-    df = pd.read_csv("../census.csv")
+    df = pd.read_csv("census_test.csv")
 
     return df.head(10)
 
