@@ -13,20 +13,20 @@ def test_get_path():
 
 def test_pred_is_1():
     body = {
-        "age": [30],
-        "workclass": ["State-gov"],
-        "fnlgt": [141297],
-        "education": ["Bachelors"],
-        "education-num": [13],
+        "age": [37],
+        "workclass": ["Private"],
+        "fnlgt": [280464],
+        "education": ["Some-college"],
+        "education-num": [10],
         "marital-status": ["Married-civ-spouse"],
-        "occupation": ["Prof-specialty"],
+        "occupation": ["Exec-managerial"],
         "relationship": ["Husband"],
-        "race": ["Asian-Pac-Islander"],
+        "race": ["Black"],
         "sex": ["Male"],
         "capital-gain": [0],
         "capital-loss": [0],
-        "hours-per-week": [40],
-        "native-country": ["India"],
+        "hours-per-week": [80],
+        "native-country": ["United-States"],
     }
 
     r = client.post("/model_inference/", json=body)
