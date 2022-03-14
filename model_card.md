@@ -13,7 +13,7 @@ The data is stored in a csv file and was obtained from the repository https://gi
 ## Evaluation Data
 To be able to get a model prediction, the data preprocessing follows the steps mentioned in the previous paragraph. The test set makes up 20% of the whole dataset.
 ## Metrics
-The metric used for evaluation are:
+The metrics used for evaluation:
 * Mean Accuracy: 0.81
 * Precision: 0.62
 * Recall: 0.63
