@@ -13,19 +13,19 @@ def test_get_path():
 
 def test_pred_is_1():
     body = {
-        "age": ["30"],
+        "age": [30],
         "workclass": ["State-gov"],
-        "fnlgt": ["141297"],
+        "fnlgt": [141297],
         "education": ["Bachelors"],
-        "education-num": ["13"],
+        "education-num": [13],
         "marital-status": ["Married-civ-spouse"],
         "occupation": ["Prof-specialty"],
         "relationship": ["Husband"],
         "race": ["Asian-Pac-Islander"],
         "sex": ["Male"],
-        "capital-gain": ["0"],
-        "capital-loss": ["0"],
-        "hours-per-week": ["40"],
+        "capital-gain": [0],
+        "capital-loss": [0],
+        "hours-per-week": [40],
         "native-country": ["India"],
     }
 
@@ -36,19 +36,19 @@ def test_pred_is_1():
 
 def test_pred_is_0():
     body = {
-        "age": ["39"],
+        "age": [39],
         "workclass": ["State-gov"],
-        "fnlgt": ["77516"],
+        "fnlgt": [77516],
         "education": ["Bachelors"],
-        "education-num": ["13"],
+        "education-num": [13],
         "marital-status": ["Never-married"],
         "occupation": ["Adm-clerical"],
         "relationship": ["Not-in-family"],
         "race": ["White"],
         "sex": ["Male"],
-        "capital-gain": ["2174"],
-        "capital-loss": ["0"],
-        "hours-per-week": ["40"],
+        "capital-gain": [2174],
+        "capital-loss": [0],
+        "hours-per-week": [40],
         "native-country": ["United-States"],
     }
     
