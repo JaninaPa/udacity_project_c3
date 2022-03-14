@@ -51,7 +51,7 @@ async def say_hello():
     return {"greeting": "Welcome!"}
 
 @app.post("/model_inference/")
-async def inference(request_body: RequestBody):
+async def predict(request_body: RequestBody):
 
     cat_features = [
         "workclass",
