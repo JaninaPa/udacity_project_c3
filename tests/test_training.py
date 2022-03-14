@@ -1,4 +1,3 @@
-from cv2 import mean
 from sklearn.model_selection import train_test_split
 from ml.data import process_data
 from ml.model import compute_model_metrics, inference, train_model
