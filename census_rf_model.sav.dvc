@@ -1,0 +1,5 @@
+outs:
+- md5: 353e03a19faa91f741786cb7f67aa24e
+  size: 518691
+  isexec: true
+  path: census_rf_model.sav

@@ -138,3 +138,5 @@ awscliv2.zip
 /census_lr_enc.sav
 /census_lr_model.sav
 /slice_testing_scores.txt
+/census_rf_model.sav
+/census_rf_enc.sav
