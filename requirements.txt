@@ -6,3 +6,4 @@ pydantic
 requests
 uvicorn
 dvc
+dvc[s3]
